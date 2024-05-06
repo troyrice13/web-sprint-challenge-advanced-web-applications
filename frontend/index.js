@@ -7,9 +7,16 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './components/App'
 import './styles/reset.css'
 import './styles/styles.css'
+// Import the necessary modules from react-dom
+import { createRoot } from 'react-dom/client';
 
-render(
+// Identify the root element
+const container = document.getElementById('root');
+const root = createRoot(container); // Create a root.
+
+// Use the root to render your component tree
+root.render(
   <BrowserRouter>
     <App />
   </BrowserRouter>
-  , document.getElementById('root'))
+);
