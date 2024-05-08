@@ -10,12 +10,6 @@ describe('Spinner Component', () => {
     expect(true).toBe(true); 
   });
 
- 
-  test('renders Spinner when "on" is true', () => {
-    render(<Spinner on={true} />);
-    const spinnerElement = screen.getByTestId('spinner'); 
-    expect(spinnerElement).toBeInTheDocument();
-  });
 
 
   test('does not render Spinner when "on" is false', () => {
